@@ -1,0 +1,8 @@
+
+<div class="conteiner">
+  <canvas #gameCanvas width="400" height="300"></canvas>
+  <button appButton [pause]="true" (click)="pauseResumeGame()">
+    {{ isPaused ? 'Iniciar' : 'Pausar' }}
+  </button>
+  <button (click)="resetGame()">Resetar</button>
+</div>

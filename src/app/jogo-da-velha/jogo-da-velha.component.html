@@ -1,0 +1,11 @@
+
+
+
+ 
+<div class="tabuleiro">
+  <app-quadrado
+    *ngFor="let valor of quadrados; index as i"
+    [valor]="valor"
+    (click)="definirValor(i)">
+  </app-quadrado>
+</div>
